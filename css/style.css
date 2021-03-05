@@ -9,6 +9,24 @@
     margin-right: 15px;
 }
 
+.general__input{
+    border: none;
+    font-size: 40px;
+    color: black;
+}
+
+.general__input::placeholder{
+    color: black;
+}
+
+.coupon__input{
+    background: rgba(252, 187, 64, 0.5);
+    border-radius: 5px;
+    border: none;
+    width: 55%;
+    padding: 5px;
+}
+
 /* buttons */
 
 .btn{
@@ -23,21 +41,29 @@
 body{
     width: 40%;
     height: 100vh;
+    background-color: #fff5e2;
 }
 
+/* header */
 header{
     background-color: #fcbb40;
     height: 150px;
 }
 
 header h1{
-    padding: 30px 0 30px 30px ;
+    padding: 45px 0 30px 30px ;
+    font-size: 50px;
 }
+
+/* main */
 
 main {
-    height: calc( 100vh - (80px + 150px ));
+    height: calc( 100vh - (100px + 150px ));
+    background-color: white;
+    overflow-y: scroll
 }
 
+/* creazione hamburger */
 #burger__name{
     margin: 20px 0 20px 30px ;
 }
@@ -64,27 +90,30 @@ main {
     margin-bottom: 20px;
 }
 
-
-
 .ingredient__element img{
     width: 100px;
     height: auto;
     
 }
 
-#ingredients__calculate h4{
-    display: inline-block;
-    margin: 20px 0 0 30px;
-    
+.ingredient__element p, span{
+    font-size: 18px;
+    font-weight: bold;
 }
+
+/* sezione coupon */
+.coupon__section{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px 30px;
+}
+
 
 .button__container{
     text-align: center;
 }
 
-footer {
-    height: 80px;
-}
+/* footer */
 
 #price__sect{
     display: flex;
@@ -92,4 +121,16 @@ footer {
     align-items: center;
     padding: 20px 30px 20px 30px;
     background-color: #d83434;
+    height: 100px;
+    color: white;
+}
+
+#price__sect h2{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#total__price{
+    font-weight: bolder;
+    font-size: 40px;
 }
