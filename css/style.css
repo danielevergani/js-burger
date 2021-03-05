@@ -4,16 +4,38 @@
     box-sizing: border-box;
 }
 
+/* mix */
+.margin__right{
+    margin-right: 15px;
+}
+
+/* buttons */
+
+.btn{
+    background-color: #fcbb40;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 body{
-    width: 60%;
+    width: 40%;
+    height: 100vh;
 }
 
 header{
     background-color: #fcbb40;
+    height: 150px;
 }
 
 header h1{
     padding: 30px 0 30px 30px ;
+}
+
+main {
+    height: calc( 100vh - (80px + 150px ));
 }
 
 #burger__name{
@@ -29,17 +51,39 @@ header h1{
     margin-left: 30px;
 }
 
-.ingredient__name{
-    display: inline-block;
+.ingredient__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ingredient__element{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.ingredient__element img{
+    width: 100px;
+    height: auto;
+    
 }
 
 #ingredients__calculate h4{
     display: inline-block;
     margin: 20px 0 0 30px;
+    
 }
 
 .button__container{
     text-align: center;
+}
+
+footer {
+    height: 80px;
 }
 
 #price__sect{
