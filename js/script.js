@@ -2,7 +2,7 @@
 var burgerName = document.getElementById("burger__name");
 var calculate = document.getElementById("calculate");
 var selection = document.getElementsByClassName("selection");
-console.log(selection);
+var total = 50;
 // inserisco evento click
 
 calculate.addEventListener("click",
@@ -18,12 +18,19 @@ calculate.addEventListener("click",
 
                 // verifico condizione con checked
                 if (selection[i].checked){
-                    console.log("ok");
+                    total += parseInt(selection[i].value)
                 }
             }
+
+            document.getElementById("total__price").innerHTML = total;
+
         }
         else{
             alert("scrivi il nume del burger")
         }
+
+       
     }
+
+    
 );
