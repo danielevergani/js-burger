@@ -13,7 +13,13 @@
     border: none;
     font-size: 40px;
     color: black;
+    padding-top: 20px;
 }
+
+.general__input:focus{
+    outline: none;
+}
+
 
 .general__input::placeholder{
     color: black;
@@ -25,6 +31,10 @@
     border: none;
     width: 55%;
     padding: 5px;
+}
+
+.coupon__input:focus{
+    outline: none;
 }
 
 /* buttons */
@@ -42,12 +52,24 @@ body{
     width: 40%;
     height: 100vh;
     background-color: #fff5e2;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* header */
 header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     background-color: #fcbb40;
     height: 150px;
+}
+
+header img{
+    position: absolute;
+    right: -80px;
+    top: -10px;
+    width: 250px;
+    height: auto;
 }
 
 header h1{
@@ -60,7 +82,7 @@ header h1{
 main {
     height: calc( 100vh - (100px + 150px ));
     background-color: white;
-    overflow-y: scroll
+    
 }
 
 /* creazione hamburger */
@@ -69,7 +91,9 @@ main {
 }
 
 #ingredients__calculate h2{
-    margin: 0 0 20px 30px;
+    margin: 20px 0 40px 30px;
+    font-size: 35px;
+    font-weight: 400;
 }
 
 #ingredients__calculate ul{
@@ -87,7 +111,7 @@ main {
     align-items: center;
     width: 50%;
     flex-shrink: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .ingredient__element img{
@@ -101,11 +125,21 @@ main {
     font-weight: bold;
 }
 
+.ingredient__element span{
+    color: red;
+}
+
+
 /* sezione coupon */
 .coupon__section{
     display: flex;
     align-items: center;
-    margin: 20px 0 30px 30px;
+    margin: 20px 0 40px 30px;
+}
+
+.coupon__section h4{
+    font-size: 25px;
+    font-weight: normal;
 }
 
 
