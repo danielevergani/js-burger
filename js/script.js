@@ -35,6 +35,11 @@ calculate.addEventListener("click",
 
             if ( coupon.includes(couponInserito.value) ){
                 total = total - (total*0.2)
+                console.log(coupon)
+                var indiceCoupon = coupon.indexOf(couponInserito.value)
+                console.log(indiceCoupon)
+                coupon.splice(indiceCoupon, 1)
+                console.log(coupon)
             }
 
             document.getElementById("total__price").innerHTML = total.toFixed(2) + " &#8364;";
