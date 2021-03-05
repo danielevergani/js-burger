@@ -4,11 +4,62 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Create Your Hamburger</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <header>
+            <h1>Create Your Hamburger</h1>
+        </header>
+
+        <main>
+            <section id="ingredients__calculate">
+                <input type="text" id="burger__name" placeholder="burger name" >
+            
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>
+                        <p class="ingredient__name">chese</p>
+                        <input type="checkbox" id="selection"> add
+                    </li>
+                    <li>
+                        <p class="ingredient__name">egg</p>
+                        <input type="checkbox" id="selection"> add
+                    </li>
+                    <li>
+                        <p class="ingredient__name">mustard</p>
+                        <input type="checkbox" id="selection"> add
+                    </li>
+                    <li>
+                        <p class="ingredient__name">tomato</p>
+                        <input type="checkbox" id="selection"> add
+                    </li>
+                    <li>
+                        <p class="ingredient__name">lettuce</p>
+                        <input type="checkbox" id="selection"> add
+                    </li>
+                    <li>
+                        <p class="ingredient__name">ketchup</p>
+                        <input type="checkbox" id="selection"> add
+                    </li>
+                </ul>
+
+                <div>
+                    <h4>Discount Coupon</h4>
+                    <input type="text" id="coupon__input" placeholder="inserisci il tuo codice">
+                </div>
+                
+                <div class="button__container">
+                    <button id="calculate">Calculate</button>
+                </div>
+            </section>
+
+            <section id="price__sect"> 
+                <h2>Your Price</h2>
+                <div>50</div>
+            </section>
+        </main>
+
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 60%;
+}
+
+header{
+    background-color: #fcbb40;
+}
+
+header h1{
+    padding: 30px 0 30px 30px ;
+}
+
+#burger__name{
+    margin: 20px 0 20px 30px ;
+}
+
+#ingredients__calculate h2{
+    margin: 0 0 20px 30px;
+}
+
+#ingredients__calculate ul{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.ingredient__name{
+    display: inline-block;
+}
+
+#ingredients__calculate h4{
+    display: inline-block;
+    margin: 20px 0 0 30px;
+}
+
+.button__container{
+    text-align: center;
+}
+
+#price__sect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    background-color: #d83434;
+}
