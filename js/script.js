@@ -4,7 +4,7 @@ var calculate = document.getElementById("calculate");
 var selection = document.getElementsByClassName("selection");
 var coupon = ["123", "321", "456"];
 var couponInserito = document.getElementById("coupon__input");
-
+var totale = document.getElementById("total__price");
 // inserisco evento click
 
 calculate.addEventListener("click",
@@ -19,6 +19,7 @@ calculate.addEventListener("click",
 
             // navigo la lista di checkbox
             for ( var i = 0; i < selection.length; i++ ){
+
 
                 // verifico condizione con checked
                 if (selection[i].checked){
@@ -40,7 +41,8 @@ calculate.addEventListener("click",
             }
 
             document.getElementById("total__price").innerHTML = total.toFixed(2) + " &#8364;";
-
+            totale.className = "price__anim";
+            setTimeout(function(){totale.classList.remove("price__anim");}, 1000);
         }
         else{
             alert("scrivi il nume del burger")
